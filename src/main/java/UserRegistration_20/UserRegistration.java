@@ -16,6 +16,12 @@ public class UserRegistration {
         boolean LastName = Pattern.matches("[A-Za-z]{3,10}", LastNametest);
         return LastName;
     }
+    public static Object ValidEmail(String ValidEmail){
+
+        boolean LastName = Pattern.matches("[a-zA-Z0-9]+[@][a-z]+[.][a-z]{2,}", ValidEmail);
+        return LastName;
+    }
+
 
     public static void main(String[] args) {
         boolean result = Pattern.matches("[A-Za-z]{3,10}", "GOOD");

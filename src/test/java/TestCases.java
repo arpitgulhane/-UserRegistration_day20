@@ -13,6 +13,10 @@ public class TestCases {
     public void TestLastName(){
         Assert.assertEquals(true,user.LastName("Arpitt"));
     }
+    @Test
+    public void TestEmail(){
+        Assert.assertEquals(true,user.ValidEmail("arpit@gmail.com"));
+    }
 
 
 
