@@ -21,6 +21,10 @@ public class TestCases {
     public void TestNumber(){
         Assert.assertEquals(true,user.numberFormat("91 9284530926"));
     }
+    @Test
+    public void TestPassword(){
+        Assert.assertEquals(true,user.Checkpassword("A2345678%"));
+    }
 
 
 

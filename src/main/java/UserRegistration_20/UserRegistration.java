@@ -26,6 +26,10 @@ public class UserRegistration {
         boolean LastName = Pattern.matches("[91 ]+[0-9]{10}", ValidNumber);
         return LastName;
     }
+    public static Object Checkpassword(String password){
+        boolean pass = Pattern.matches("[A-Za-z0-9](?=.*\\d)(?=.*[@#$%^&+=]).{8,}", password);
+        return pass;
+    }
 
 
     public static void main(String[] args) {
