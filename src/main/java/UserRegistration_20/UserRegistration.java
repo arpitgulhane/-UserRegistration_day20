@@ -27,7 +27,7 @@ public class UserRegistration {
         return LastName;
     }
     public static Object Checkpassword(String password){
-        boolean pass = Pattern.matches("[A-Za-z0-9](?=.*\\d)(?=.*[@#$%^&+=]).{8,}", password);
+        boolean pass = Pattern.matches("(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=]).{8,}", password);
         return pass;
     }
 
