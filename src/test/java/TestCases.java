@@ -17,6 +17,11 @@ public class TestCases {
     public void TestEmail(){
         Assert.assertEquals(true,user.ValidEmail("arpit@gmail.com"));
     }
+    @Test
+    public void TestNumber(){
+        Assert.assertEquals(true,user.numberFormat("91 9284530926"));
+    }
+
 
 
 

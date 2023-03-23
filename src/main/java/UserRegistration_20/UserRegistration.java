@@ -18,7 +18,12 @@ public class UserRegistration {
     }
     public static Object ValidEmail(String ValidEmail){
 
-        boolean LastName = Pattern.matches("[a-zA-Z0-9]+[@][a-z]+[.][a-z]{2,}", ValidEmail);
+        boolean Email = Pattern.matches("[a-zA-Z0-9]+[@][a-z]+[.][a-z]{2,}", ValidEmail);
+        return Email;
+    }
+    public static Object numberFormat(String ValidNumber){
+
+        boolean LastName = Pattern.matches("[91 ]+[0-9]{10}", ValidNumber);
         return LastName;
     }
 
