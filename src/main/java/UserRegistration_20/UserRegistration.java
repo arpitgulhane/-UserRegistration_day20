@@ -7,7 +7,14 @@ public class UserRegistration {
     public static Object firstName(String name){
 
         boolean result = Pattern.matches("[A-Za-z]{3,10}", name);
+//        boolean result = Pattern.matches("^Cap\\w{2,}$", name);
         return result;
+    }
+
+    public static Object LastName(String LastNametest){
+
+        boolean LastName = Pattern.matches("[A-Za-z]{3,10}", LastNametest);
+        return LastName;
     }
 
     public static void main(String[] args) {

@@ -7,7 +7,11 @@ public class TestCases {
     UserRegistration user =new UserRegistration();
     @Test
     public void addTest(){
-        Assert.assertEquals(true,user.firstName("arp"));
+        Assert.assertEquals(true,user.firstName("Gulhane"));
+    }
+    @Test
+    public void TestLastName(){
+        Assert.assertEquals(true,user.LastName("Arpitt"));
     }
 
 
