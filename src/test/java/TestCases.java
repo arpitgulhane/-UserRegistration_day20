@@ -2,8 +2,22 @@ import UserRegistration_20.Demo;
 import UserRegistration_20.UserRegistration;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 public class TestCases {
+
+    @RunWith(Parameterized.class)
+            public class addMEmail{
+                    Object sample;
+                    public addMEmail(Object getSample){
+                        this.sample=getSample;
+                    }
+    }
+
     UserRegistration user =new UserRegistration();
     @Test
     public void addTest(){
@@ -27,6 +41,13 @@ public class TestCases {
     }
 
 
+    @Parameterized.Parameters
+    public static Collection squreData(){
+            return Arrays.asList(new Object[]{
+                    {"true" , "arpit@gmail.com"};
+                    {"true" , "arpit@gmail.com";}
+            });
+    }
 
 
 }
