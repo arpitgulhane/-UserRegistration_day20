@@ -13,8 +13,10 @@ public class MoodAnalyzer {
     public String analyseMood() {
         if (message.contains("Sad")) {
             return "SAD";
-        } else {
+        } else if(message.contains("Null")) {
             return "HAPPY";
+        }else {
+                return "invalid";
         }
     }
 
