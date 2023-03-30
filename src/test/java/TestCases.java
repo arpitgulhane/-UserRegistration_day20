@@ -41,13 +41,13 @@ public class TestCases {
     }
 
 
-    @Parameterized.Parameters
-    public static Collection squreData(){
-            return Arrays.asList(new Object[]{
-                    {"true" , "arpit@gmail.com"};
-                    {"true" , "arpit@gmail.com";}
-            });
-    }
+//    @Parameterized.Parameters
+//    public static Collection squreData(){
+//            return Arrays.asList(new Object[]{
+//                    {"true" , "arpit@gmail.com"};
+//                    {"true" , "arpit@gmail.com";}
+//            });
+//    }
 
 
 }

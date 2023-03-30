@@ -18,7 +18,8 @@ public class UserRegistration {
     }
     public static Object ValidEmail(String ValidEmail){
 
-        boolean Email = Pattern.matches("[a-zA-Z0-9]+[@][a-z]+[.][a-z]{2,}", ValidEmail);
+//        boolean Email = Pattern.matches("[a-zA-Z0-9]+[@][a-z]+[.][a-z]{2,}", ValidEmail);
+        boolean Email = Pattern.matches("^[\\w. ]{1,}[@][a-z]{1,}[.]com$", ValidEmail);
         return Email;
     }
     public static Object numberFormat(String ValidNumber){
@@ -30,6 +31,7 @@ public class UserRegistration {
         boolean pass = Pattern.matches("(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=]).{8,}", password);
         return pass;
     }
+
 
 
     public static void main(String[] args) {
