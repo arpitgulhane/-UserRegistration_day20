@@ -4,7 +4,6 @@ public class MoodAnalyzer {
 
     private String message;
 
-    public MoodAnalyzer() {}
 
     public MoodAnalyzer(String message) {
         this.message = message;
@@ -12,6 +11,7 @@ public class MoodAnalyzer {
 
     public String analyseMood() throws MoodAnalysisException {
         if (message == null || message.isEmpty()) {
+            System.out.println("Empty...");
             throw new MoodAnalysisException(MoodAnalysisError.EMPTY_OR_NULL_MOOD_ERROR);
         }
         if (message.contains("Sad")) {
