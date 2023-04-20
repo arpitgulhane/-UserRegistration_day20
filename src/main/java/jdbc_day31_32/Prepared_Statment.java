@@ -21,6 +21,7 @@ public class Prepared_Statment {
 
                 String query = "insert into employee_payroll (nme,salary,startDate,gender,emp_phone,address,department,deduction,taxable,incomeTax,basic,net)values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
                 PreparedStatement statement = connection.prepareStatement(query);
+                statement.setInt(2,9);
                 statement.setString(2,"zero");
                 statement.setDouble(3,500.5);
                 statement.setString(4,"2019-05-06");
